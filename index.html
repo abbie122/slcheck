@@ -119,7 +119,12 @@ input { font-family: inherit; color: inherit; }
 .mono { font-family: 'JetBrains Mono', monospace; }
 
 .app { max-width: 430px; margin: 0 auto; min-height: 100vh; display: flex; flex-direction: column; }
-@media (min-width: 900px) { .app { max-width: 560px; } }
+@media (min-width: 1000px) {
+  .app { max-width: 1240px; padding: 0 32px; }
+  #sc-search { display: block; }
+  #results { min-width: 0; }
+  .install-banner { display: none; }
+}
 
 /* ── SPLASH ───────────────────────────────────────────────────────────── */
 .splash {
